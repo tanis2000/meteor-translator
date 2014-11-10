@@ -111,7 +111,7 @@ var handler = function (doc, compileStep, isLiterate) {
       compileStep.addJavaScript({
         path: basePath + ".js",
         data: js,
-        sourcePath: basePath + ".js",
+        sourcePath: basePath,
         bare: false
       });
       break;

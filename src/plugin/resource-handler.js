@@ -107,6 +107,7 @@ var handler = function (doc, compileStep, isLiterate) {
       var jsVar = 'Translator._namespaces[' + JSON.stringify(namespace) + ']';
       var js = '(' + jsVar + '||(' + jsVar + '={}))'; // obj for namespace
       js += '["' + locale.toString() + '"]=' + jsonString; // add value
+      console.log("adding " + basePath + ".js");
       // add it as a js file for the server
       compileStep.addJavaScript({
         path: basePath + ".js",

@@ -109,7 +109,7 @@ var handler = function (doc, compileStep, isLiterate) {
       js += '["' + locale.toString() + '"]=' + jsonString; // add value
       // add it as a js file for the server
       compileStep.addJavaScript({
-        path: basePath,
+        path: basePath + ".js",
         data: js,
         sourcePath: basePath,
         bare: false

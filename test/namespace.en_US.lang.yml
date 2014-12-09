@@ -42,3 +42,5 @@ permille: "{num, number, #,000‰}"
 
 readable_number_short: "{num, number, decimal, short}"
 readable_number_long: "{num, number, decimal, long}"
+
+single_quote: "L''invio"

@@ -133,3 +133,15 @@ testAsyncMulti("Translator - message-format - combine plural and select", [
     }));
   }
 ]);
+
+testAsyncMulti("Translator - single quote", [
+  function (test, expect) {
+    var translator = new Translator();
+    translator.setLanguage(['en_US']);
+    translator.use(NAMESPACE);
+    
+    translator.ready(expect(function () {
+      test.equal(translator.get('single_quote'), "L'invio");
+    }));
+  }
+]);
